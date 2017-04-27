@@ -1,0 +1,2 @@
+cask 'steermouse'
+brew 'tig'

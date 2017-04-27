@@ -6,20 +6,14 @@
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-
-# Colors for terminal
+# Terminal display
+git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
 export CLICOLOR=1 # Enables color in the terminal bash shell export
 export LSCOLORS=GxBxcxdxCxexexGxGxGxHx
-export PS1='\[\033[01;36m\]\u\[\033[00m\]:\[\033[01;32m\]\w\[\033[00m\]\$ ' # Sets up the prompt color
+export PS1="\[\033[01;36m\]\u\[\033[00m\]:\[\033[01;32m\]\w\[\033[01;33m\]\$(git_branch)\[\033[00m\]$ " # Sets up the prompt color
 export TERM=xterm-color # Enables color for iTerm
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home
-
-# Add an environment variable for CUDA
-export PATH=/Developer/NVIDIA/CUDA-6.0/bin:$PATH
-
-# Source the git completion bash file
-source ~/.git-completion.bash
 
 # Aliases
 alias ..='cd ..'
@@ -30,8 +24,6 @@ alias la='ls -CAh'
 alias lf='ls -Fah'
 alias l='ls -lah'
 alias ll='ls -al'
-alias deviceQuery='/Developer/GPU\ Computing/bin/x86_64/darwin/release/deviceQuery'
-alias ssh_key='ssh -R 52698:localhost:52698 trevorr@keymaker.vrac.iastate.edu'
 
 # Restart sound drivers
 alias reboot_sound="sudo kextunload /System/Library/Extensions/AppleHDA.kext && sudo kextload /System/Library/Extensions/AppleHDA.kext"
