@@ -1,2 +1,18 @@
-cask 'steermouse'
+tap 'caskroom/cask'
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+tap 'caskroom/drivers'
+
+# Browsers
+cask 'google-chrome'
+cask 'brave'
+cask 'firefox'
+
+# Development
+cask 'atom'
 brew 'tig'
+brew 'vim'
+
+# Utilities
+cask 'adobe-reader'
+cask 'steermouse'
