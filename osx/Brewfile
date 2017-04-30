@@ -3,16 +3,26 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'caskroom/drivers'
 
-# Browsers
-cask 'google-chrome'
-cask 'brave'
-cask 'firefox'
-
 # Development
 cask 'atom'
+brew 'git'
+cask 'intellij-idea-ce'
+cask 'java' unless system '/usr/libexec/java_home --failfast'
+cask 'macvim'
+brew 'nvm'
+cask 'postman'
 brew 'tig'
-brew 'vim'
+brew 'tmux'
 
-# Utilities
-cask 'adobe-reader'
+cask 'google-chrome'
+
+# Utility Apps
+cask 'disk-inventory-x'
+cask 'dropbox'
+cask 'evernote'
+cask 'google-drive'
+mas 'LastPass', id: 926036361
+cask 'slack'
+cask 'spectacle'
+cask 'spotify'
 cask 'steermouse'
