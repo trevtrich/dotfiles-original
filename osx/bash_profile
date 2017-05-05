@@ -25,6 +25,7 @@ alias la='ls -CAh'
 alias lf='ls -Fah'
 alias l='ls -lah'
 alias ll='ls -al'
+alias reload='. ~/.bash_profile && bind -f ~/.inputrc'
 
 # Restart sound drivers
 alias reboot_sound="sudo kextunload /System/Library/Extensions/AppleHDA.kext && sudo kextload /System/Library/Extensions/AppleHDA.kext"
