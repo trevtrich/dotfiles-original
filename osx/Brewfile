@@ -5,6 +5,7 @@ tap 'caskroom/drivers'
 
 # Development
 cask 'atom'
+cask 'ccmenu'
 brew 'git'
 cask 'intellij-idea-ce'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
@@ -22,7 +23,10 @@ cask 'dropbox'
 cask 'evernote'
 cask 'google-drive'
 mas 'LastPass', id: 926036361
+cask 'pencil'
+cask 'skitch'
 cask 'slack'
 cask 'spectacle'
 cask 'spotify'
 cask 'steermouse'
+mas 'twitter', id: 409789998
