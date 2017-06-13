@@ -17,13 +17,22 @@ brew 'tmux'
 
 cask 'google-chrome'
 
+# Design
+cask 'pencil'
+
+# Text Editing
+cask 'evernote'
+mas 'keynote', id: 409183694
+mas 'numbers', id: 409203825
+cask 'openoffice'
+mas 'pages', id: 409201541
+
 # Utility Apps
 cask 'disk-inventory-x'
 cask 'dropbox'
-cask 'evernote'
+cask 'gitter'
 cask 'google-drive'
 mas 'LastPass', id: 926036361
-cask 'pencil'
 cask 'skitch'
 cask 'slack'
 cask 'spectacle'
