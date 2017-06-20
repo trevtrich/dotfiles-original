@@ -1,5 +1,6 @@
 [alias]
 	br = branch
+	dm = "!f() { git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; }; f"	
 	cm = commit
 	co = checkout
 	hist = log -n 10 --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
@@ -9,7 +10,7 @@
 	st = status
 	wipe = !git add -A && git commit -qnm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	amend = commit -a --amend --no-edit
-    	fp = push --force-with-lease
+  fp = push --force-with-lease
 
 [color]
 	branch = auto
