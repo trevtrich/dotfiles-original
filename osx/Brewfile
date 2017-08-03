@@ -2,6 +2,7 @@ tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'caskroom/drivers'
+tap 'caskroom/versions'
 
 # Development
 cask 'atom'
@@ -17,6 +18,7 @@ brew 'tig'
 brew 'tmux'
 
 cask 'google-chrome'
+cask 'google-chrome-canary'
 
 # Design
 cask 'pencil'
