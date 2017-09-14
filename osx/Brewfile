@@ -41,4 +41,5 @@ cask 'teampaper-snap'
 cask 'spectacle'
 cask 'spotify'
 cask 'steermouse'
+brew 'tree'
 mas 'twitter', id: 409789998
